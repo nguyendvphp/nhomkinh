@@ -1,4 +1,4 @@
-<div class="service">
+<!--<div class="service">
 	<a href="<?php the_permalink(); ?>">
 		<?php cpotheme_icon(get_post_meta(get_the_ID(), 'service_icon', true), 'primary-color service-icon'); ?>
 	</a>
@@ -11,4 +11,4 @@
 		</div>
 		<?php cpotheme_edit(); ?>
 	</div>
-</div>
+</div>-->

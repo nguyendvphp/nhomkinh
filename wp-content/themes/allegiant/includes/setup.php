@@ -15,8 +15,8 @@ function cpotheme_theme_layout($data){
 	add_action('cpotheme_before_main', 'cpotheme_home_testimonials');
 	add_action('cpotheme_before_main', 'cpotheme_home_clients');
 	add_action('cpotheme_before_main', 'cpotheme_home_team');
+    add_action('cpotheme_title', 'cpotheme_breadcrumb');
 	add_action('cpotheme_title', 'cpotheme_page_title');
-	add_action('cpotheme_title', 'cpotheme_breadcrumb');
 	add_action('cpotheme_subfooter', 'cpotheme_subfooter');
 	add_action('cpotheme_footer', 'cpotheme_footer_menu');
 	add_action('cpotheme_footer', 'cpotheme_footer');

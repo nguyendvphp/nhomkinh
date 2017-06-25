@@ -5,7 +5,7 @@ if(!function_exists('cpotheme_page_title')){
 	function cpotheme_page_title(){
 		global $post;
 		if(isset($post->ID)) $current_id = $post->ID; else $current_id = false;		
-		$title_tag = function_exists('is_woocommerce') && is_woocommerce() && is_singular('product') ? 'span' : 'h1';
+		$title_tag = function_exists('is_woocommerce') && is_woocommerce() && is_singular('product') ? 'span' : 'h3';
 		
 		echo '<'.$title_tag.' class="pagetitle-title heading">';
 		if(function_exists('is_woocommerce') && is_woocommerce()){
@@ -171,7 +171,7 @@ if(!function_exists('cpotheme_subfooter')){
 if(!function_exists('cpotheme_footer')){
 	function cpotheme_footer(){		
 		echo '<div class="footer-content">';
-		echo '&copy; '.get_bloginfo('name').' '.date("Y").'. '.sprintf(__('<a href="%s">%s</a> theme by CPOThemes.', 'allegiant'), esc_url(CPOTHEME_PREMIUM_URL), esc_attr(CPOTHEME_NAME)); 
+		echo '&copy; '.get_bloginfo('name').' '.date("Y").'. '.sprintf(__('Thiết kế web bởi <a href="%s">%s</a>.', 'NHKSoft.Net'), esc_url(CPOTHEME_PREMIUM_URL), esc_attr(CPOTHEME_NAME)); 
 		echo '</div>';
 	}
 }
@@ -357,7 +357,7 @@ if(!function_exists('cpotheme_breadcrumb')){
 					$result = "<span class='breadcrumb-separator'></span>";
 					$result .= __('Page Not Found', 'allegiant');
 				}
-				$result = '<a class="breadcrumb-link" href="'.home_url().'">'.__('Home', 'allegiant').'</a>'.$result;
+				$result = '<a class="breadcrumb-link" href="'.home_url().'">'.__('Trang chủ', 'allegiant').'</a>'.$result;
 			}
 			
 			$output = '<div id="breadcrumb" class="breadcrumb">'.$result.'</div>';

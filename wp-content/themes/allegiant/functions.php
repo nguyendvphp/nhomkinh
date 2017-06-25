@@ -1,6 +1,6 @@
 <?php if(!isset($content_width)) $content_width = 640;
 define('CPOTHEME_ID', 'allegiant');
-define('CPOTHEME_NAME', 'Allegiant');
+define('CPOTHEME_NAME', 'Nhksoft.net');
 define('CPOTHEME_VERSION', '1.0.8');
 //Other constants
 define('CPOTHEME_LOGO_WIDTH', '215');
@@ -12,7 +12,7 @@ define('CPOTHEME_USE_TESTIMONIALS', true);
 define('CPOTHEME_USE_TEAM', true);
 define('CPOTHEME_USE_CLIENTS', true);
 define('CPOTHEME_PREMIUM_NAME', 'Allegiant Pro');
-define('CPOTHEME_PREMIUM_URL', '//www.cpothemes.com/theme/allegiant');
+define('CPOTHEME_PREMIUM_URL', '//www.nhksoft.net');
 
 // Add epsilon framework
 require get_template_directory() . '/includes/libraries/epsilon-framework/class-epsilon-autoloader.php';
@@ -36,3 +36,10 @@ require_once($include_path.'setup.php');
 
 //Include Welcome Screen
 require get_template_directory() . '/core/welcome-screen/welcome-page-setup.php';
+
+function custom_loginlogo() {
+echo '<style type="text/css">
+h1 a {background-image: url('.get_bloginfo('template_directory').'/images/logo.png) !important; }
+</style>';
+}
+add_action('login_head', 'custom_loginlogo');
