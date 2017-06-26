@@ -211,7 +211,7 @@ LAYOUT
 
 
 /* SIDEBARS */
-.sidebar { float:left; width:30%; }
+.sidebar { float:left; width:30%; padding-top: 10px;}
 .main-full .sidebar { padding:30px; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 .sidebar-none .sidebar { display:none; }
 .sidebar-double .sidebar,

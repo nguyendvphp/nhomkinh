@@ -6,7 +6,9 @@
 	<div class="container">
 		<section id="content" class="content">
 			<?php do_action('cpotheme_before_content'); ?>
-			
+			<div id="title" class="title">
+            	<?php do_action('cpotheme_title'); ?>
+            </div>
 			<?php $description = term_description(); ?>
 			<?php if($description != ''): ?>
 			<div class="page-content">

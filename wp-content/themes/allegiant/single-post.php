@@ -10,7 +10,7 @@
             	<?php do_action('cpotheme_title'); ?>
             </div>
 			<?php if(have_posts()) while(have_posts()): the_post(); ?>
-			<?php get_template_part('template-parts/element', 'blog'); ?>
+			<?php get_template_part('template-parts/element', 'single-blog'); ?>
 			<?php cpotheme_author(); ?>
 			<?php comments_template('', true); ?>
 			<?php endwhile; ?>

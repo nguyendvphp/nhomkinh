@@ -1,17 +1,3 @@
-/*
-Theme Name:Allegiant
-Theme URI:http://www.cpothemes.com/theme/allegiant
-Description:Allegiant is a free multipurpose WordPress theme perfect for agencies and professionals. This theme comes with support for a full homepage slider, feature blocks, portfolios, services, team members, and even testimonials, all thanks to its companion plugin CPO Content Types. Allegiant is one of the best business WordPress themes thanks to its neutral design and extreme flexibility. Moreover, this theme also integrates with popular plugins such as WooCommerce, Yoast SEO, WPML, and Contact Form 7. 
-Tags: one-column, two-columns, right-sidebar, full-width-template, sticky-post, theme-options, custom-background, custom-menu, featured-images, threaded-comments, translation-ready
-Author:CPOThemes
-Author URI:http://www.cpothemes.com
-Version:1.1.5
-License:GNU General Public License 2.0 or later
-License URI:readme.txt
-Text Domain:allegiant
-*/
-
-
 /* --------------------------------------------------------------
 GENERAL ELEMENTS
 -------------------------------------------------------------- */
@@ -19,7 +5,7 @@ GENERAL ELEMENTS
 /* BODY */
 ::selection  { color:#fff; background-color:#89ce40; }
 ::-moz-selection { color:#fff; background-color:#89ce40; }		
-body { font-family:'Roboto', Arial, Helvetica, sans-serif; background:#fff; color:#99a; font-size:14px; line-height:1.6; }
+body { font-family:'Roboto', Arial, Helvetica, sans-serif; background:#fff; color:#333; font-size:14px; line-height:1.6; }
 
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6 { color:#567; line-height:1.2; margin:0 0 20px; }
@@ -31,8 +17,8 @@ h5 { font-size:1.2em; }
 h6 { font-size:1.1em; }
 
 /* HYPERLINKS */
-a:link, a:visited { color:#2a88bf; text-decoration:none; }
-a:hover { color:#39c; text-decoration:underline; }
+a:link, a:visited { color:#41a1fa; text-decoration:none; }
+a:hover { color:#eb3326; text-decoration:underline; }
 
 /* CITATIONS */
 blockquote { display:block; font-style:italic; padding:0 5%; margin:25px 0; }
@@ -96,8 +82,8 @@ LAYOUT
 .slider-slides .slide-image { float:right; padding:0; width:48%; }
 .slider-slides .slide-image img { display:block; margin:0 auto; }
 .slider-slides .slide-caption { overflow:hidden; text-transform:uppercase; float:left; padding:0 0 30px; width:48%; text-align:left; }
-.slider-slides .slide-caption p:last-child { margin-bottom:0; color: green; font-size: 18px; }
-.slider-slides .slide-title { font-size:2.6em; }
+.slider-slides .slide-caption p:last-child { margin-bottom:0; color: #eb2723; font-size: 18px; }
+.slider-slides .slide-title { font-size:2.6em; color: #74ba29;}
 .slider-slides .slide-content { position:relative; font-size:1.2em; padding:0 0 30px; margin:0 0 30px; }
 .slider-slides .slide-content:after { content:' '; position:absolute; background:#888; bottom:0; left:0; width:100px; height:1px; }
 /* Prev/Next */
@@ -200,7 +186,7 @@ LAYOUT
 .widget { overflow:hidden; margin:0 0 40px; }
 .sidebar .widget {  padding:0 0; }
 .sidebar .widget:first-child { border-top:none; padding:0; }
-.widget .widget-title { font-size:1.2em; text-transform:uppercase; }
+.widget .widget-title { font-size:1.2em; text-transform:uppercase; color: #89ce40;}
 .widget ul li { position:relative; padding:0; margin:0 0 8px; }
 
 
@@ -290,12 +276,12 @@ POSTS & PAGES
 
 /* POST LISTING */
 .post  { margin:0 0 40px; background:#fff; }
-.post .post-image { margin:0; float: left; width: 30%;}
+.post .post-image { margin:0; float: left; width: 40%;}
 .post .post-image img { display:block; margin:0; line-height:0em; width:100%; height:auto; border-radius:0; }
-.post .post-body { padding-left:20px; /*border:1px solid #ddd; */width: 63%; float: left;}
+.post .post-body { padding-left:20px; /*border:1px solid #ddd; */width: 55%; float: left;}
 .post .post-title { font-size:1.4em; padding:0; margin:0 0 10px 0; }
 .post .post-title a { color:inherit; }
-.post .post-byline { overflow:hidden; text-transform:uppercase; position:relative; padding:0 0 10px; margin:0 0 20px; color:#aaa; font-size:0.9em; }
+.post .post-byline { overflow:hidden; text-transform:uppercase; position:relative; padding:0 0 10px; margin:0 0 10px; color:#aaa; font-size:0.9em; }
 .post .post-byline:before { content:' '; position:absolute; background:#bbb; bottom:0; left:0; width:100px; height:1px; }
 .post .post-byline div { float:left; position:relative; padding:0 22px 0 0; margin-bottom:10px; }
 .post .post-byline div:last-child { padding-right:0; }

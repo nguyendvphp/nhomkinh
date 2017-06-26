@@ -370,7 +370,7 @@ body .ctsc-button-huge.ctsc-button-has-icon .ctsc-button-content { padding-left:
 .ctsc-postlist-list .ctsc-post-thumbnail { display:table-cell; vertical-align:middle; width:70px; margin:0; }
 .ctsc-postlist-list .ctsc-post-thumbnail img { display:block; height:auto; width:50px; margin-right:20px; }
 .ctsc-postlist-list .ctsc-post-body { display:table-cell; vertical-align:middle; overflow:hidden; }
-.ctsc-postlist-list .ctsc-post-title { font-size:1.2em; margin:0 0 5px; }
+.ctsc-postlist-list .ctsc-post-title { font-size:1.1em; margin:0 0 5px; }
 .ctsc-postlist-list .ctsc-post-byline div { margin-bottom:0; }
 .ctsc-postlist-list .ctsc-post-content { display:none; }
 

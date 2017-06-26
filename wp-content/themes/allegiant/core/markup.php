@@ -512,7 +512,7 @@ if(!function_exists('cpotheme_postpage_readmore')){
 	function cpotheme_postpage_readmore($classes = ''){
 		if(!is_singular('post')){
 			echo '<a class="post-readmore '.esc_attr($classes).'" href="'.get_permalink(get_the_ID()).'">';
-			echo apply_filters('cpotheme_readmore', __('Read More', 'allegiant'));
+			echo apply_filters('cpotheme_readmore', __('Xem thêm', 'allegiant'));
 			echo '</a>';
 		}
 	}
