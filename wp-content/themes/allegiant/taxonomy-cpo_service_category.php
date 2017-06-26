@@ -6,7 +6,10 @@
 	<div class="container">
 		<section id="content" class="content">
 			<?php do_action('cpotheme_before_content'); ?>
-			
+			<div id="title" class="title">
+                <?php custom_breadcrumbs(); ?>
+            	<?php do_action('cpotheme_title'); ?>
+            </div>
 			<?php $description = term_description(); ?>
 			<?php if($description != ''): ?>
 			<div class="page-content">
@@ -14,12 +17,13 @@
 			</div>
 			<?php endif; ?>
 			
-			<?php if(have_posts()): $feature_count = 0; ?>
-			<div id="services" class="services">
-				<?php cpotheme_grid(null, 'element', 'service', 3); ?>
-			</div>
-			<?php endif; ?>
+			<?php if(have_posts()): ?>
+			<?php if(is_author()) cpotheme_author(); ?>
+			<?php while(have_posts()): the_post(); ?>
+			<?php get_template_part('template-parts/element', 'service'); ?>
+			<?php endwhile; ?>
 			<?php cpotheme_numbered_pagination(); ?>
+			<?php endif; ?>
 			
 			<?php do_action('cpotheme_after_content'); ?>
 		</section>

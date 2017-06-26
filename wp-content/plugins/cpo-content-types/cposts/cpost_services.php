@@ -9,16 +9,16 @@ function ctct_cpost_services(){
 	}
 	
 	//Set up labels
-	$labels = array('name' => __('Services', 'ctct'),
-	'singular_name' => __('Services', 'ctct'),
-	'add_new' => __('Add Service', 'ctct'),
-	'add_new_item' => __('Add New Service', 'ctct'),
-	'edit_item' => __('Edit Service', 'ctct'),
-	'new_item' => __('New Service', 'ctct'),
-	'view_item' => __('View Service', 'ctct'),
-	'search_items' => __('Search Services', 'ctct'),
-	'not_found' =>  __('No services found.', 'ctct'),
-	'not_found_in_trash' => __('No services found in the trash.', 'ctct'), 
+	$labels = array('name' => __('Tư vấn', 'ctct'),
+	'singular_name' => __('Tư vấn', 'ctct'),
+	'add_new' => __('Thêm tư vấn', 'ctct'),
+	'add_new_item' => __('Thêm tư vấn mới', 'ctct'),
+	'edit_item' => __('Sửa tư vấn', 'ctct'),
+	'new_item' => __('Tư vấn mới', 'ctct'),
+	'view_item' => __('Hiển thị tư vấn', 'ctct'),
+	'search_items' => __('Tìm kiếm tư vấn', 'ctct'),
+	'not_found' =>  __('Không tìm thấy tư vấn nào.', 'ctct'),
+	'not_found_in_trash' => __('Không tìm thấy tư vấn nào trong thùng rác.', 'ctct'), 
 	'parent_item_colon' => '');
 	
 	$slug = ctct_get_option('slug_service');
@@ -34,7 +34,7 @@ function ctct_cpost_services(){
 	'menu_icon' => 'dashicons-archive',
 	'menu_position' => null,
 	'show_in_nav_menus' => true,
-	'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes')); 
+	'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'comments')); 
 	
 	register_post_type('cpo_service', $fields);
 }
